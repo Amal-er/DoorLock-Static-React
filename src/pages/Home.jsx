@@ -7,6 +7,7 @@ import Slider from "react-slick";
 import bgtestimonial from "../assets/bg-testimonial.jpg";
 import lock1 from "../assets/lock1.webp";
 import lock2 from "../assets/lock2.webp";
+import { Link } from "react-router-dom";
 
 function Home() {
   // Scroll left function
@@ -118,9 +119,11 @@ function Home() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <button className="bg-[#be9662] text-white px-6 py-3 my-5">
-              About Us
-            </button>
+            <Link to="/about">
+              <button className="bg-[#be9662] text-white px-6 py-3 my-5">
+                About Us
+              </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -140,9 +143,11 @@ function Home() {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <button className="bg-[#be9662] text-white px-6 py-3 my-5">
-              About Us
-            </button>
+            <Link to="/about">
+              <button className="bg-[#be9662] text-white px-6 py-3 my-5">
+                About Us
+              </button>
+            </Link>
           </div>
         </div>
         <div className="md:w-[35%] w-full flex justify-center items-center">
@@ -194,7 +199,7 @@ function Home() {
             </div>
           </div>
 
-          {/* Left Scroll Button */}
+          {/* Left Scroll----------- Button */}
           <button
             className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-600 text-white p-2 md:hidden z-10"
             onClick={() => scrollLeft()}
