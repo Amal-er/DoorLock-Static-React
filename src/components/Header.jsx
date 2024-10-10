@@ -40,7 +40,7 @@ const Header = () => {
           <nav className="hidden md:flex space-x-8">
             <a
               href="/"
-              className="hover:text-gray-300 transition-colors duration-300"
+              className="hover:text-gray-300 transition-colors duration-300 font-poppins"
             >
               Home
             </a>

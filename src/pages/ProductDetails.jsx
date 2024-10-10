@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 const ProductDetails = ({ products }) => {
   const { productId } = useParams();
+
+  // States to toggle visibility for each section
+  const [showDetails, setShowDetails] = useState(false);
+  const [showDimensions, setShowDimensions] = useState(false);
+  const [showPackage, setShowPackage] = useState(false);
+  const [showShipping, setShowShipping] = useState(false);
 
   // Check if products array exists
   if (!products) {
@@ -33,7 +39,75 @@ const ProductDetails = ({ products }) => {
           <p className="text-sm text-gray-500 mb-4">
             {product.colorsAvailable}
           </p>
-          <p className=""> size</p>
+          <p>Size: {product.size || "N/A"}</p>
+
+          {/* Product Details */}
+          <div className="border-b py-2 md:py-5">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setShowDetails(!showDetails)}
+            >
+              <p>Product Details</p>
+              <span>{showDetails ? "-" : "+"}</span>
+            </div>
+            {showDetails && (
+              <div className="mt-2">
+                <p>Upholstered in chenille-effect fabric.</p>
+                <p>Solid ash wood legs in a natural finish.</p>
+              </div>
+            )}
+          </div>
+
+          {/* Dimensions & Specifications */}
+          <div className="border-b py-2  md:py-5">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setShowDimensions(!showDimensions)}
+            >
+              <p>Dimensions & Specifications</p>
+              <span>{showDimensions ? "-" : "+"}</span>
+            </div>
+            {showDimensions && (
+              <div className="mt-2">
+                <p>Dimensions: W 56 cm x H 75 cm x D 55 cm</p>
+                <p>Weight: 8 kg</p>
+              </div>
+            )}
+          </div>
+
+          {/* Package */}
+          <div className="border-b py-2  md:py-5">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setShowPackage(!showPackage)}
+            >
+              <p>Package</p>
+              <span>{showPackage ? "-" : "+"}</span>
+            </div>
+            {showPackage && (
+              <div className="mt-2">
+                <p>
+                  Comes in a flat package with all necessary tools included.
+                </p>
+              </div>
+            )}
+          </div>
+
+          {/* Shipping & Returns */}
+          <div className="border-b py-2  md:py-5">
+            <div
+              className="flex justify-between items-center cursor-pointer"
+              onClick={() => setShowShipping(!showShipping)}
+            >
+              <p>Shipping & Returns</p>
+              <span>{showShipping ? "-" : "+"}</span>
+            </div>
+            {showShipping && (
+              <div className="mt-2">
+                <p>Ships in 4-5 weeks. Free returns within 30 days.</p>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

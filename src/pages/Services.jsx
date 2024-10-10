@@ -44,7 +44,7 @@ function Services() {
           <h2 className="text-2xl md:text-3xl font-normal mb-4 md:mb-6 text-center">
             Design Consultation
           </h2>
-          <p className="max-w-lg md:max-w-2xl mx-auto text-base md:text-lg mb-8 md:mb-12 text-center md:px-6 lg:px-44">
+          <p className="max-w-lg md:max-w-2xl mx-auto text-base md:text-lg mb-8 md:mb-12  md:px-6 lg:px-44 text-justify">
             At Ergo Craft, we wholeheartedly embrace the notion that crafting a
             home is an art form. We’re not just here to offer our creative
             expertise; we’re committed to sharing our distinctive vision with
@@ -92,15 +92,15 @@ function Services() {
             </div>
           </div>
         </div>
-        {/* ---------------------------------------------- */}
+        {/*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*/}
 
-        {/* ---------------------------------------------- */}
+        {/*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*--*-- */}
       </div>
-      <div className=" bg-[#f6f6f3] px-4  lg:px-20 md:py-10 ">
+      <div className=" bg-[#f6f6f3] px-4   md:py-10 ">
         <h2 className="text-2xl md:text-3xl font-normal mb-4 md:mb-6 text-center">
           Room Planer
         </h2>
-        <p className="max-w-lg md:max-w-2xl mx-auto text-sm md:text-lg mb-8 md:mb-12 text-center">
+        <p className="max-w-lg md:max-w-2xl mx-auto text-sm md:text-lg mb-8 md:mb-12  text-justify">
           See your exact room, expertly designed in 3D, with Ergo pieces you can
           buy on the spot.
         </p>
@@ -109,7 +109,7 @@ function Services() {
           {/* 3D Room Planer Section */}
           <div className="flex-1 flex flex-col items-center md:items-start text-center md:text-left">
             <h3 className="text-xl font-semibold mb-4">3D Room Planer</h3>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Design your floor plan with custom dimensions and place Ergo
               pieces to create your ideal look. Save your creations for future
               inspiration, or opt to consult with one of our in-house designers
@@ -128,7 +128,7 @@ function Services() {
             <h3 className="text-xl font-semibold mb-4">
               3D Room Planer + Free Designer
             </h3>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Seeking inspiration? Look no further than our in-house design
               experts! Collaborate with them to receive a personalized 3D sketch
               of your space, complete with Ergo items tailored to your taste and

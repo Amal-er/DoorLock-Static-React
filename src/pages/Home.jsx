@@ -8,6 +8,20 @@ import bgtestimonial from "../assets/bg-testimonial.jpg";
 import lock1 from "../assets/lock1.webp";
 import lock2 from "../assets/lock2.webp";
 import { Link } from "react-router-dom";
+import modern1 from "../assets/modern1.jpg";
+import modern2 from "../assets/modern2.jpg";
+import modern3 from "../assets/modern3.jpg";
+import modern4 from "../assets/modern4.jpg";
+import modern5 from "../assets/modern5.jpg";
+import icon1 from "../assets/icons/icon1.png";
+import icon2 from "../assets/icons/icon2.png";
+import icon3 from "../assets/icons/icon3.png";
+import icon4 from "../assets/icons/icon4.png";
+import icon5 from "../assets/icons/icon5.png";
+import prev1 from "../assets/prev1.jpg";
+import prev2 from "../assets/prev2.jpg";
+import prev3 from "../assets/prev3.jpg";
+import prev4 from "../assets/prev4.jpg";
 
 function Home() {
   // Scroll left function
@@ -100,7 +114,7 @@ function Home() {
           </p>
         </div>
       </div>
-      {/* ---------------------first box img & content------------------------------ */}
+      {/* -------------------------first box img & content------------------------------ */}
       <div className="bg-[#fcf9f4] h-full w-full flex flex-col md:flex-row   ">
         <div className="md:w-[35%] w-full flex justify-center items-center ">
           <img src={door2} className="w-full h-[70%]" alt="" />
@@ -108,12 +122,12 @@ function Home() {
         <div className="md:w-[65%] w-full flex justify-center items-center md:px-36 px-7">
           <div>
             <h1 className="text-lg font-medium">WHY CHOOSE US</h1>
-            <p className="py-5">
+            <p className="py-5 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
-            <p className="py-1">
+            <p className="py-1 text-justify">
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
@@ -127,17 +141,17 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* ------------------------ second div------------------------------------- */}
+      {/* ------------------------------------ second div------------------------------------- */}
       <div className="bg-[#fcf9f4] h-full w-full flex flex-col md:flex-row ">
         <div className="md:w-[65%] w-full flex justify-center items-center md:px-36 px-7">
           <div>
             <h1 className="text-lg font-medium"> OUR MANUFACTURING</h1>
-            <p className="py-5">
+            <p className="py-5 text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
             </p>
-            <p className="py-1">
+            <p className="py-1 text-justify">
               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
               reprehenderit in voluptate velit esse cillum dolore eu fugiat
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
@@ -168,31 +182,31 @@ function Home() {
             style={{ scrollSnapType: "x mandatory" }}
           >
             <div className="relative w-[50%] md:w-1/5 h-96 snap-center shrink-0">
-              <div className="w-full h-full object-cover bg-slate-100"></div>
+              <img src={modern1} className="h-full w-full" alt="" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                 <p className="text-white text-lg">WOODEN DOORS</p>
               </div>
             </div>
             <div className="relative w-[50%] md:w-1/5 h-96 snap-center shrink-0">
-              <div className="w-full h-full object-cover bg-slate-200"></div>
+              <img src={modern2} className="h-full w-full" alt="" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                 <p className="text-white text-lg">SMART DOORS</p>
               </div>
             </div>
             <div className="relative w-[50%] md:w-1/5 h-96 snap-center shrink-0">
-              <div className="w-full h-full object-cover bg-slate-300"></div>
+              <img src={modern3} className="h-full w-full" alt="" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                 <p className="text-white text-lg">ROAMIC WINDOWS</p>
               </div>
             </div>
             <div className="relative w-[50%] md:w-1/5 h-96 snap-center shrink-0">
-              <div className="w-full h-full object-cover bg-slate-400"></div>
+              <img src={modern5} className="h-full w-full" alt="" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                 <p className="text-white text-lg">STEEL DOORS</p>
               </div>
             </div>
             <div className="relative w-[50%] md:w-1/5 h-96 snap-center shrink-0">
-              <div className="w-full h-full object-cover bg-slate-500"></div>
+              <img src={modern4} className="h-full w-full" alt="" />
               <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
                 <p className="text-white text-lg">ERTIBLE WINDOWS</p>
               </div>
@@ -221,19 +235,19 @@ function Home() {
       <div className="w-full h-full bg-[#fcf9f4]">
         <div className="w-full h-36 bg-[#f9f4ee] flex justify-between items-center">
           <div className=" p-4  w-[20%] h-full flex  justify-center items-center">
-            1
-          </div>
-          <div className=" p-4  w-[20%] h-full  flex  justify-center items-center">
-            2
-          </div>
-          <div className=" p-4  w-[20%] h-full  flex  justify-center items-center">
-            3
+            <img src={icon1} alt="" />
           </div>
           <div className=" p-4  w-[20%] h-full flex  justify-center items-center">
-            4
+            <img src={icon2} alt="" />
           </div>
           <div className=" p-4  w-[20%] h-full flex  justify-center items-center">
-            5
+            <img src={icon3} alt="" />
+          </div>
+          <div className=" p-4  w-[20%] h-full flex  justify-center items-center">
+            <img src={icon4} alt="" />
+          </div>
+          <div className=" p-4  w-[20%] h-full flex  justify-center items-center">
+            <img src={icon5} alt="" />
           </div>
         </div>
 
@@ -244,7 +258,7 @@ function Home() {
         <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-3">
           {/* First Box */}
           <div className="relative h-96">
-            <div className="w-full h-full object-cover bg-slate-100"></div>
+            <img src={prev1} className="w-full h-full" alt="" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
               <p className="text-white text-lg">WOODEN DOORS</p>
             </div>
@@ -252,7 +266,7 @@ function Home() {
 
           {/* Second Box */}
           <div className="relative h-96">
-            <div className="w-full h-full object-cover bg-slate-200"></div>
+            <img src={prev2} className="w-full h-full" alt="" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
               <p className="text-white text-lg">SMART DOORS</p>
             </div>
@@ -260,7 +274,7 @@ function Home() {
 
           {/* Third Box */}
           <div className="relative h-96">
-            <div className="w-full h-full object-cover bg-slate-300"></div>
+            <img src={prev3} className="w-full h-full" alt="" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
               <p className="text-white text-lg">ROAMIC WINDOWS</p>
             </div>
@@ -268,7 +282,7 @@ function Home() {
 
           {/* Fourth Box */}
           <div className="relative h-96">
-            <div className="w-full h-full object-cover bg-slate-400"></div>
+            <img src={prev4} className="w-full h-full" alt="" />
             <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-40">
               <p className="text-white text-lg">STEEL DOORS</p>
             </div>
@@ -321,7 +335,7 @@ function Home() {
         </p>
       </div> */}
 
-      {/* ----------------------- */}
+      {/* ------------------------------------ */}
 
       {/* Left section with text */}
       {/* h-full rounded-br-[40%] */}
@@ -357,9 +371,11 @@ function Home() {
         </div>
       </div>
 
-      {/* --------------------------- */}
+      {/* -||--||--||--||--||--||--||--||--||--||--||--qwert007--||--||--||--||--||--||--||--||--||--||- */}
     </>
   );
 }
 
 export default Home;
+
+// ----------------------------------------------------------

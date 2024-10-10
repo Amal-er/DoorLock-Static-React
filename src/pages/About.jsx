@@ -92,7 +92,7 @@ function About() {
               </h1>
 
               {/* Paragraph Section */}
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Simpson has been making doors within the forests of Washington
                 state since 1912. Generations of families have dedicated their
                 lives to creating the finest doors in America. It’s a team
@@ -102,7 +102,7 @@ function About() {
                 getting a part of our home as well.
               </p>
 
-              <p className="text-gray-600">
+              <p className="text-gray-600 text-justify">
                 Simpson's comprehensive line of interior and exterior stile and
                 rail doors includes hundreds of standard options from panel to
                 French to decorative entry doors with matching sidelights and

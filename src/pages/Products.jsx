@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import servicebanner from "../assets/servicebanner.webp";
+import productbg from "../assets/productbg.webp";
 import product1 from "../assets/product1.webp";
 import product2 from "../assets/product2.webp";
 import product3 from "../assets/product3.webp";
@@ -40,6 +40,39 @@ const products = [
     description: "Solid in construction, simple in form",
     colorsAvailable: "4 colors available",
   },
+  {
+    id: 5,
+    name: "IO Coffee Table",
+    price: "$695–$850",
+    image: product1,
+    description: "Solid in construction, simple in form",
+    colorsAvailable: "3 colors available",
+    labels: ["SALE", "NEW"],
+  },
+  {
+    id: 6,
+    name: "Ramila Arm Chair",
+    price: "$350",
+    image: product2,
+    description: "Solid in construction, simple in form",
+    colorsAvailable: "2 colors available",
+  },
+  {
+    id: 7,
+    name: "Glass Coffee Table",
+    price: "$1,050–$1,250",
+    image: product3,
+    description: "Solid in construction, simple in form",
+    colorsAvailable: "2 sizes available",
+  },
+  {
+    id: 8,
+    name: "Miruna Floor Lamp",
+    price: "$895",
+    image: product4,
+    description: "Solid in construction, simple in form",
+    colorsAvailable: "4 colors available",
+  },
 ];
 
 function Products() {
@@ -48,7 +81,7 @@ function Products() {
       {/* Banner Section */}
       <div className="w-full h-[300px] md:h-[400px] relative">
         <img
-          src={servicebanner}
+          src={productbg}
           alt="service Banner"
           className="w-full h-full object-cover"
         />
@@ -75,11 +108,11 @@ function Products() {
               className="border p-4 hover:shadow-lg transition-shadow duration-300 bg-[#f6f6f4]"
             >
               <Link to={`/product/${product.id}`}>
-                <div className="relative">
+                <div className="relative overflow-hidden">
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-64 object-cover mb-4"
+                    className="w-full h-64 object-cover mb-4 transition-transform duration-500 ease-in-out transform hover:scale-110 hover:brightness-75"
                   />
                   {/* Labels like SALE, NEW */}
                   <div className="absolute top-2 left-2 flex space-x-2">
